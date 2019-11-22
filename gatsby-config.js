@@ -30,5 +30,14 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-source-drupal`,
+      options: {
+        baseUrl: `https://dev-eric-gatsby.pantheonsite.io/`,
+        // apiBase: `api`, // optional, defaults to `jsonapi`
+      },
+    },
   ],
 }
